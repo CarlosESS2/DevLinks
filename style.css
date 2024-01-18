@@ -27,6 +27,7 @@
 /* Background */
 body {
   background: var(--background-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 /* Font */
@@ -159,11 +160,21 @@ footer {
   padding: 24px;
 }
 
+@media (min-width: 700px) {
+  :root {
+    --background-url: url(./assets/bg-desktop.jpg);
+  }
+  .light {
+    --background-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
 /* 
 
 box-sizing: border-box; 
 * {}
 margin: auto;
 line-height: 24px;
+at rules
 
 */
